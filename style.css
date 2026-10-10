@@ -1,0 +1,55 @@
+:root {
+  --green: #0f3d2e;
+  --green-light: #17503d;
+  --ivory: #f7f3e8;
+  --gold: #e3b341;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: var(--green);
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px 28px;
+  background: var(--green-light);
+  border: 2px solid var(--gold);
+  border-radius: 18px;
+  text-align: center;
+}
+
+h1 { margin: 0 0 8px; font-size: 1.9rem; line-height: 1.2; }
+.sub { margin: 0 0 24px; opacity: .8; }
+
+input, button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-family: inherit;
+}
+
+input { margin-bottom: 12px; background: var(--ivory); color: #1a1a1a; }
+
+button {
+  background: var(--gold);
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+:focus-visible { outline: 3px solid var(--ivory); outline-offset: 2px; }
+
+.result { margin: 24px 0 0; min-height: 1.5em; font-size: 1.15rem; }
+.result strong { display: block; margin-top: 8px; font-size: 2rem; color: var(--gold); }
